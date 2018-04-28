@@ -1,4 +1,4 @@
-package org.example.ankodemo
+package com.uabc.edu.anko
 
 import android.content.Context
 import android.util.AttributeSet

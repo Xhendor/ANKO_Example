@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.view.Gravity
 import android.widget.Button
 import android.widget.EditText
-import org.example.ankodemo.CountriesActivity
 import org.jetbrains.anko.*
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import android.text.InputType.TYPE_CLASS_TEXT
 import android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
-import org.example.ankodemo.myRichView
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,8 +19,10 @@ class MainActivity : AppCompatActivity() {
    // setContentView(R.layout.activity_main)
 
    //Cuando cargamos un layout ANKO
-  MainActivityUi().setContentView(this)
-}
+   MainActivityUi().setContentView(this)
+
+
+  }
 
 fun tryLogin(ui: AnkoContext<MainActivity>, name: CharSequence?, password: CharSequence?) {
   ui.doAsync {
@@ -32,6 +32,9 @@ fun tryLogin(ui: AnkoContext<MainActivity>, name: CharSequence?, password: CharS
       if (checkCredentials(name.toString(), password.toString())) {
         toast("Logged in! :)")
         startActivity<CountriesActivity>()
+       // email("rosendorsc@gmail.com","Correo de prueba","Prueba desde anko")
+        //sendSMS("6862032977","Soy un SMS!!!")
+        //share("Texto desde ANKO APP","Test Anko")
       } else {
         toast("Wrong password :( Enter user:password")
 

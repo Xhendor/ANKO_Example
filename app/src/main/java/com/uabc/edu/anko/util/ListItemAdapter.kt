@@ -1,4 +1,4 @@
-package org.example.ankodemo.util
+package com.uabc.edu.anko.util
 
 import android.content.Context
 import android.view.Gravity

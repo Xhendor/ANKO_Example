@@ -1,13 +1,13 @@
-package org.example.ankodemo
+package com.uabc.edu.anko
 
 import android.app.ListActivity
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
-import org.example.ankodemo.util.ListItem
-import org.example.ankodemo.util.ListItemAdapter
-import org.example.ankodemo.util.TextListItem
+import com.uabc.edu.anko.util.ListItem
+import com.uabc.edu.anko.util.ListItemAdapter
+import com.uabc.edu.anko.util.TextListItem
 import org.jetbrains.anko.*
 
 
